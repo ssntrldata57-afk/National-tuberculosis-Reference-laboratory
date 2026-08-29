@@ -1,1 +1,1048 @@
+```css
+/* =========================================================
+   NATIONAL TUBERCULOSIS REFERENCE LABORATORY
+   Professional Website Stylesheet
+   South Sudan | National Public Health Laboratory
+   ========================================================= */
+
+/* ---------- ROOT VARIABLES ---------- */
+:root {
+    --primary: #0b4f71;
+    --primary-dark: #07364d;
+    --primary-light: #eaf5f9;
+
+    --secondary: #147d64;
+    --secondary-dark: #0d5d4b;
+
+    --accent: #d99a2b;
+    --accent-light: #fff5dc;
+
+    --danger: #b42318;
+    --success: #16803c;
+
+    --dark: #17212b;
+    --text: #344054;
+    --muted: #667085;
+    --light: #f6f8fa;
+    --white: #ffffff;
+
+    --border: #d9e1e7;
+    --shadow: 0 8px 25px rgba(16, 24, 40, 0.08);
+    --shadow-hover: 0 14px 35px rgba(16, 24, 40, 0.14);
+
+    --radius: 10px;
+    --container: 1180px;
+}
+
+/* ---------- RESET ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+    background: var(--light);
+    color: var(--text);
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    color: var(--primary);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: var(--secondary);
+}
+
+ul {
+    list-style: none;
+}
+
+/* ---------- CONTAINER ---------- */
+.container {
+    width: min(92%, var(--container));
+    margin: 0 auto;
+}
+
+/* =========================================================
+   TOP INFORMATION BAR
+   ========================================================= */
+
+.top-bar {
+    background: var(--primary-dark);
+    color: var(--white);
+    padding: 8px 0;
+    font-size: 14px;
+}
+
+.top-bar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.top-bar a {
+    color: var(--white);
+}
+
+.top-bar a:hover {
+    color: var(--accent);
+}
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+header {
+    background: var(--white);
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-main {
+    padding: 18px 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+/* ---------- LOGO ---------- */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
+
+.logo-text h1 {
+    font-size: 22px;
+    line-height: 1.25;
+    color: var(--primary-dark);
+    font-weight: 700;
+}
+
+.logo-text p {
+    margin-top: 3px;
+    font-size: 13px;
+    color: var(--muted);
+}
+
+/* =========================================================
+   NAVIGATION
+   ========================================================= */
+
+nav {
+    background: var(--primary);
+}
+
+nav .container {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+nav li {
+    position: relative;
+}
+
+nav a {
+    display: block;
+    padding: 14px 18px;
+    color: var(--white);
+    font-weight: 600;
+    font-size: 15px;
+}
+
+nav a:hover,
+nav a.active {
+    background: var(--secondary);
+    color: var(--white);
+}
+
+/* =========================================================
+   HERO SECTION
+   ========================================================= */
+
+.hero {
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background:
+        linear-gradient(
+            rgba(7, 54, 77, 0.88),
+            rgba(11, 79, 113, 0.82)
+        ),
+        url("images/laboratory.jpg") center/cover no-repeat;
+    color: var(--white);
+}
+
+.hero-content {
+    max-width: 760px;
+    padding: 80px 0;
+}
+
+.hero h2 {
+    font-size: clamp(34px, 5vw, 58px);
+    line-height: 1.15;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.hero p {
+    max-width: 700px;
+    font-size: 19px;
+    margin-bottom: 30px;
+    color: rgba(255, 255, 255, 0.92);
+}
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: 700;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background: var(--secondary);
+    color: var(--white);
+}
+
+.btn-primary:hover {
+    background: var(--secondary-dark);
+    color: var(--white);
+    transform: translateY(-2px);
+}
+
+.btn-outline {
+    border-color: var(--white);
+    color: var(--white);
+    background: transparent;
+}
+
+.btn-outline:hover {
+    background: var(--white);
+    color: var(--primary);
+}
+
+.btn-accent {
+    background: var(--accent);
+    color: var(--dark);
+}
+
+.btn-accent:hover {
+    background: #c68720;
+    color: var(--dark);
+}
+
+/* =========================================================
+   SECTION
+   ========================================================= */
+
+section {
+    padding: 70px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-title h2 {
+    color: var(--primary-dark);
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.section-title p {
+    max-width: 720px;
+    margin: auto;
+    color: var(--muted);
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: var(--accent);
+    margin: 18px auto 0;
+    border-radius: 10px;
+}
+
+/* =========================================================
+   INTRODUCTION / ABOUT
+   ========================================================= */
+
+.about {
+    background: var(--white);
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.about h2 {
+    color: var(--primary-dark);
+    font-size: 32px;
+    margin-bottom: 18px;
+}
+
+.about p {
+    margin-bottom: 15px;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+/* =========================================================
+   CARDS
+   ========================================================= */
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background: var(--white);
+    padding: 30px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-hover);
+}
+
+.card-icon {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary-light);
+    color: var(--primary);
+    border-radius: 50%;
+    font-size: 25px;
+    margin-bottom: 18px;
+}
+
+.card h3 {
+    color: var(--primary-dark);
+    margin-bottom: 12px;
+    font-size: 21px;
+}
+
+.card p {
+    color: var(--muted);
+}
+
+/* =========================================================
+   SERVICES
+   ========================================================= */
+
+.services {
+    background: #eef5f7;
+}
+
+.service-card {
+    background: var(--white);
+    border-left: 5px solid var(--secondary);
+    padding: 25px;
+    border-radius: 7px;
+    box-shadow: var(--shadow);
+}
+
+.service-card h3 {
+    color: var(--primary-dark);
+    margin-bottom: 10px;
+}
+
+.service-card ul {
+    margin-top: 15px;
+}
+
+.service-card li {
+    margin-bottom: 8px;
+    padding-left: 22px;
+    position: relative;
+}
+
+.service-card li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--success);
+    font-weight: bold;
+}
+
+/* =========================================================
+   STATISTICS
+   ========================================================= */
+
+.stats {
+    background: var(--primary-dark);
+    color: var(--white);
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    text-align: center;
+}
+
+.stat {
+    padding: 25px;
+}
+
+.stat h3 {
+    font-size: 42px;
+    color: var(--accent);
+    margin-bottom: 5px;
+}
+
+.stat p {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+/* =========================================================
+   INFORMATION / NOTICE BOX
+   ========================================================= */
+
+.notice {
+    padding: 20px 25px;
+    border-left: 5px solid var(--accent);
+    background: var(--accent-light);
+    border-radius: 5px;
+    margin: 25px 0;
+}
+
+.notice strong {
+    color: var(--primary-dark);
+}
+
+/* =========================================================
+   TABLES
+   ========================================================= */
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    background: var(--white);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 650px;
+}
+
+th,
+td {
+    padding: 14px 16px;
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+}
+
+th {
+    background: var(--primary);
+    color: var(--white);
+    font-weight: 700;
+}
+
+tr:hover td {
+    background: var(--primary-light);
+}
+
+/* =========================================================
+   FORMS
+   ========================================================= */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 7px;
+    color: var(--dark);
+    font-weight: 600;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 13px 15px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--white);
+    color: var(--text);
+    font: inherit;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(11, 79, 113, 0.12);
+}
+
+textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+/* =========================================================
+   CONTACT
+   ========================================================= */
+
+.contact {
+    background: var(--white);
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 40px;
+}
+
+.contact-info {
+    background: var(--primary-dark);
+    color: var(--white);
+    padding: 35px;
+    border-radius: var(--radius);
+}
+
+.contact-info h3 {
+    margin-bottom: 25px;
+    font-size: 25px;
+}
+
+.contact-item {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.contact-item strong {
+    display: block;
+    color: var(--accent);
+}
+
+/* =========================================================
+   PAGE BANNER
+   ========================================================= */
+
+.page-banner {
+    background:
+        linear-gradient(
+            rgba(7, 54, 77, 0.9),
+            rgba(11, 79, 113, 0.9)
+        );
+    color: var(--white);
+    padding: 70px 0;
+    text-align: center;
+}
+
+.page-banner h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.page-banner p {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* =========================================================
+   BREADCRUMB
+   ========================================================= */
+
+.breadcrumb {
+    background: #edf2f5;
+    padding: 12px 0;
+    font-size: 14px;
+}
+
+.breadcrumb a {
+    font-weight: 600;
+}
+
+/* =========================================================
+   NEWS / ANNOUNCEMENTS
+   ========================================================= */
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.news-card {
+    background: var(--white);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+}
+
+.news-card img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.news-content {
+    padding: 25px;
+}
+
+.news-date {
+    font-size: 13px;
+    color: var(--secondary);
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.news-content h3 {
+    color: var(--primary-dark);
+    margin-bottom: 10px;
+}
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+footer {
+    background: #101820;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-main {
+    padding: 60px 0 35px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+.footer-column h3 {
+    color: var(--white);
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.footer-column p {
+    margin-bottom: 12px;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column a {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.footer-column a:hover {
+    color: var(--accent);
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* =========================================================
+   SOCIAL LINKS
+   ========================================================= */
+
+.social-links {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.social-links a {
+    width: 38px;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 50%;
+}
+
+.social-links a:hover {
+    background: var(--secondary);
+    border-color: var(--secondary);
+    color: var(--white);
+}
+
+/* =========================================================
+   ALERTS
+   ========================================================= */
+
+.alert {
+    padding: 15px 20px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.alert-success {
+    background: #e9f7ef;
+    color: #176b3a;
+    border: 1px solid #b8e0c7;
+}
+
+.alert-warning {
+    background: #fff6df;
+    color: #805b00;
+    border: 1px solid #efd58b;
+}
+
+.alert-danger {
+    background: #fdecec;
+    color: #8b1e16;
+    border: 1px solid #efb4af;
+}
+
+/* =========================================================
+   BACK TO TOP
+   ========================================================= */
+
+.back-to-top {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary);
+    color: var(--white);
+    border-radius: 50%;
+    box-shadow: var(--shadow);
+    z-index: 999;
+}
+
+.back-to-top:hover {
+    background: var(--secondary);
+    color: var(--white);
+    transform: translateY(-3px);
+}
+
+/* =========================================================
+   UTILITY CLASSES
+   ========================================================= */
+
+.text-center {
+    text-align: center;
+}
+
+.text-primary {
+    color: var(--primary);
+}
+
+.text-secondary {
+    color: var(--secondary);
+}
+
+.text-muted {
+    color: var(--muted);
+}
+
+.bg-white {
+    background: var(--white);
+}
+
+.bg-light {
+    background: var(--light);
+}
+
+.mt-1 {
+    margin-top: 10px;
+}
+
+.mt-2 {
+    margin-top: 20px;
+}
+
+.mt-3 {
+    margin-top: 30px;
+}
+
+.mb-1 {
+    margin-bottom: 10px;
+}
+
+.mb-2 {
+    margin-bottom: 20px;
+}
+
+.mb-3 {
+    margin-bottom: 30px;
+}
+
+/* =========================================================
+   RESPONSIVE DESIGN - TABLETS
+   ========================================================= */
+
+@media (max-width: 992px) {
+
+    .about-grid,
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card-grid,
+    .news-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .logo-text h1 {
+        font-size: 19px;
+    }
+
+    nav a {
+        padding: 12px 13px;
+    }
+}
+
+/* =========================================================
+   RESPONSIVE DESIGN - MOBILE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    body {
+        font-size: 15px;
+    }
+
+    .top-bar .container {
+        flex-direction: column;
+        gap: 4px;
+        text-align: center;
+    }
+
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo {
+        justify-content: center;
+    }
+
+    .logo img {
+        width: 60px;
+        height: 60px;
+    }
+
+    nav .container {
+        justify-content: center;
+    }
+
+    nav ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    nav li,
+    nav a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero {
+        min-height: 430px;
+    }
+
+    .hero-content {
+        padding: 60px 0;
+        text-align: center;
+    }
+
+    .hero h2 {
+        font-size: 34px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    section {
+        padding: 50px 0;
+    }
+
+    .section-title h2 {
+        font-size: 28px;
+    }
+
+    .card-grid,
+    .news-grid,
+    .stats-grid,
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .page-banner h1 {
+        font-size: 32px;
+    }
+
+    .footer-grid {
+        gap: 30px;
+    }
+}
+
+/* =========================================================
+   SMALL MOBILE DEVICES
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    .container {
+        width: 94%;
+    }
+
+    .logo {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .logo-text h1 {
+        font-size: 18px;
+    }
+
+    .hero h2 {
+        font-size: 29px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .card {
+        padding: 22px;
+    }
+
+    .contact-info {
+        padding: 25px;
+    }
+
+    .stat h3 {
+        font-size: 34px;
+    }
+}
+
+/* =========================================================
+   PRINT
+   ========================================================= */
+
+@media print {
+
+    nav,
+    .top-bar,
+    .back-to-top,
+    footer {
+        display: none;
+    }
+
+    body {
+        background: white;
+        color: black;
+    }
+
+    section {
+        padding: 20px 0;
+    }
+}
+```
 
