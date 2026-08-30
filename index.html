@@ -1,93 +1,104 @@
-```html
-<!-- =====================================================
-     NTRL WEBSITE ARCHITECTURE
-===================================================== -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
 
-<section class="section website-architecture" id="website-architecture">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <div class="container">
+    <meta name="description"
+          content="National Tuberculosis Reference Laboratory - Laboratory information, tuberculosis diagnostic services, quality assurance, training and laboratory resources.">
 
-        <!-- Section Header -->
-        <div class="section-heading">
+    <meta name="keywords"
+          content="National Tuberculosis Reference Laboratory, NTRL, tuberculosis, TB, laboratory, GeneXpert, microscopy, culture, diagnostics">
 
-            <span>WEBSITE ARCHITECTURE</span>
+    <meta name="author" content="National Tuberculosis Reference Laboratory">
 
-            <h2>
-                National Tuberculosis Reference Laboratory
-            </h2>
+    <title>National Tuberculosis Reference Laboratory</title>
 
-            <p>
-                The NTRL website is organized into structured web pages,
-                stylesheets and laboratory media resources to provide a
-                professional, accessible and responsive digital platform.
-            </p>
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
 
-        </div>
+<body>
 
+    <!-- =========================
+         HEADER
+    ========================== -->
+    <header class="site-header">
 
-        <!-- Architecture Card -->
-        <div class="architecture-card">
+        <div class="container header-container">
 
-            <div class="architecture-header">
+            <div class="logo-area">
 
-                <div class="architecture-icon">
+                <div class="logo-placeholder">
                     NTRL
                 </div>
 
-                <div>
-                    <h3>
-                        National-tuberculosis-Reference-laboratory
-                    </h3>
+                <div class="logo-text">
+                    <h1>National Tuberculosis</h1>
+                    <p>Reference Laboratory</p>
+                </div>
+
+            </div>
+
+            <button class="menu-toggle"
+                    type="button"
+                    aria-label="Open navigation menu"
+                    onclick="toggleMenu()">
+                ☰
+            </button>
+
+            <nav class="main-navigation" id="mainNavigation">
+
+                <a href="#home">Home</a>
+                <a href="#about">About Us</a>
+                <a href="#services">Services</a>
+                <a href="#quality">Quality Assurance</a>
+                <a href="#training">Training</a>
+                <a href="#contact">Contact</a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         HERO / HOME
+    ========================== -->
+    <main>
+
+        <section id="home" class="hero">
+
+            <div class="container hero-content">
+
+                <div class="hero-text">
+
+                    <p class="hero-label">
+                        NATIONAL TUBERCULOSIS REFERENCE LABORATORY
+                    </p>
+
+                    <h2>
+                        Strengthening Tuberculosis
+                        Laboratory Services
+                    </h2>
 
                     <p>
-                        Official NTRL Website Directory
+                        Providing reliable tuberculosis laboratory services,
+                        diagnostic support, quality assurance, training and
+                        technical expertise to strengthen TB control.
                     </p>
-                </div>
 
-            </div>
+                    <div class="hero-buttons">
 
+                        <a href="#services" class="btn btn-primary">
+                            Our Services
+                        </a>
 
-            <!-- Root Files -->
-            <div class="architecture-group">
-
-                <div class="architecture-group-title">
-                    <span class="folder-icon">📁</span>
-                    Website Root Directory
-                </div>
-
-                <div class="file-item">
-
-                    <span class="file-icon html-icon">
-                        HTML
-                    </span>
-
-                    <div class="file-details">
-
-                        <strong>index.html</strong>
-
-                        <span>
-                            Main NTRL website homepage and content structure
-                        </span>
-
-                    </div>
-
-                </div>
-
-
-                <div class="file-item">
-
-                    <span class="file-icon css-icon">
-                        CSS
-                    </span>
-
-                    <div class="file-details">
-
-                        <strong>style.css</strong>
-
-                        <span>
-                            Professional website design, layout,
-                            responsive styling and visual presentation
-                        </span>
+                        <a href="#contact" class="btn btn-secondary">
+                            Contact Us
+                        </a>
 
                     </div>
 
@@ -95,266 +106,65 @@
 
             </div>
 
+        </section>
 
-            <!-- Images Directory -->
-            <div class="architecture-group">
 
-                <div class="architecture-group-title">
+        <!-- =========================
+             ABOUT
+        ========================== -->
+        <section id="about" class="section">
 
-                    <span class="folder-icon">📁</span>
+            <div class="container">
 
-                    images/
+                <div class="section-heading">
+
+                    <p class="section-label">ABOUT NTRL</p>
+
+                    <h2>
+                        National Tuberculosis Reference Laboratory
+                    </h2>
 
                 </div>
 
+                <div class="about-grid">
 
-                <div class="image-files">
+                    <div class="about-content">
 
+                        <p>
+                            The National Tuberculosis Reference Laboratory
+                            (NTRL) provides specialized laboratory support
+                            for tuberculosis diagnosis, monitoring,
+                            quality assurance and laboratory capacity
+                            development.
+                        </p>
 
-                    <div class="file-item">
+                        <p>
+                            The laboratory supports the national tuberculosis
+                            response by promoting accurate, reliable and
+                            timely laboratory testing and strengthening
+                            laboratory systems.
+                        </p>
 
-                        <span class="file-icon image-icon">
-                            IMG
-                        </span>
-
-                        <div class="file-details">
-
-                            <strong>ntrl-logo.png</strong>
-
-                            <span>
-                                Official NTRL logo and institutional branding
-                            </span>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="file-item">
-
-                        <span class="file-icon image-icon">
-                            IMG
-                        </span>
-
-                        <div class="file-details">
-
-                            <strong>ntrl-laboratory.jpg</strong>
-
-                            <span>
-                                National Tuberculosis Reference Laboratory
-                                facility image
-                            </span>
-
-                        </div>
+                        <p>
+                            Our work contributes to improved diagnosis,
+                            surveillance, quality management and technical
+                            capacity within tuberculosis laboratory services.
+                        </p>
 
                     </div>
 
-
-                    <div class="file-item">
-
-                        <span class="file-icon image-icon">
-                            IMG
-                        </span>
-
-                        <div class="file-details">
-
-                            <strong>ntrl-building.jpg</strong>
-
-                            <span>
-                                National Public Health Laboratory building
-                            </span>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="file-item">
-
-                        <span class="file-icon image-icon">
-                            IMG
-                        </span>
-
-                        <div class="file-details">
-
-                            <strong>manager.jpg</strong>
-
-                            <span>
-                                NTRL Manager's official profile photograph
-                            </span>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="file-item">
-
-                        <span class="file-icon image-icon">
-                            IMG
-                        </span>
-
-                        <div class="file-details">
-
-                            <strong>genexpert.jpg</strong>
-
-                            <span>
-                                GeneXpert tuberculosis diagnostic services
-                            </span>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="file-item">
-
-                        <span class="file-icon image-icon">
-                            IMG
-                        </span>
-
-                        <div class="file-details">
-
-                            <strong>microscopy.jpg</strong>
-
-                            <span>
-                                TB microscopy and quality assurance activities
-                            </span>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="file-item">
-
-                        <span class="file-icon image-icon">
-                            IMG
-                        </span>
-
-                        <div class="file-details">
-
-                            <strong>culture.jpg</strong>
-
-                            <span>
-                                TB culture and laboratory diagnostic activities
-                            </span>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="file-item">
-
-                        <span class="file-icon image-icon">
-                            IMG
-                        </span>
-
-                        <div class="file-details">
-
-                            <strong>training.jpg</strong>
-
-                            <span>
-                                Laboratory training and capacity-building activities
-                            </span>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="file-item">
-
-                        <span class="file-icon image-icon">
-                            IMG
-                        </span>
-
-                        <div class="file-details">
-
-                            <strong>testing-laboratory.jpg</strong>
-
-                            <span>
-                                TB laboratory testing and diagnostic activities
-                            </span>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="file-item">
-
-                        <span class="file-icon image-icon">
-                            IMG
-                        </span>
-
-                        <div class="file-details">
-
-                            <strong>staff-training.jpg</strong>
-
-                            <span>
-                                NTRL staff training and mentorship activities
-                            </span>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="file-item">
-
-                        <span class="file-icon image-icon">
-                            IMG
-                        </span>
-
-                        <div class="file-details">
-
-                            <strong>activity-1.jpg</strong>
-
-                            <span>
-                                NTRL laboratory activities and updates
-                            </span>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="file-item">
-
-                        <span class="file-icon image-icon">
-                            IMG
-                        </span>
-
-                        <div class="file-details">
-
-                            <strong>activity-2.jpg</strong>
-
-                            <span>
-                                NTRL training and capacity-building activities
-                            </span>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="file-item">
-
-                        <span class="file-icon image-icon">
-                            IMG
-                        </span>
-
-                        <div class="file-details">
-
-                            <strong>activity-3.jpg</strong>
-
-                            <span>
-                                NTRL quality improvement activities
-                            </span>
-
-                        </div>
+                    <div class="about-card">
+
+                        <h3>Our Role</h3>
+
+                        <ul>
+                            <li>TB laboratory diagnosis</li>
+                            <li>Quality assurance</li>
+                            <li>Laboratory supervision</li>
+                            <li>Technical support</li>
+                            <li>Training and capacity building</li>
+                            <li>Laboratory surveillance support</li>
+                        </ul>
 
                     </div>
 
@@ -362,36 +172,620 @@
 
             </div>
 
+        </section>
 
-            <!-- Architecture Summary -->
-            <div class="architecture-summary">
 
-                <div>
-                    <strong>01</strong>
-                    <span>HTML Structure</span>
+        <!-- =========================
+             SERVICES
+        ========================== -->
+        <section id="services" class="section section-light">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-label">LABORATORY SERVICES</p>
+
+                    <h2>
+                        Our Laboratory Services
+                    </h2>
+
+                    <p>
+                        Supporting quality tuberculosis diagnosis through
+                        laboratory testing, technical expertise and
+                        quality-assured processes.
+                    </p>
+
                 </div>
 
-                <div>
-                    <strong>01</strong>
-                    <span>CSS Stylesheet</span>
+
+                <div class="services-grid">
+
+                    <!-- GeneXpert -->
+                    <article class="service-card">
+
+                        <div class="service-icon">
+                            01
+                        </div>
+
+                        <h3>GeneXpert Testing</h3>
+
+                        <p>
+                            Molecular testing services supporting rapid
+                            detection of tuberculosis and assessment of
+                            drug resistance according to applicable
+                            laboratory procedures.
+                        </p>
+
+                    </article>
+
+
+                    <!-- Microscopy -->
+                    <article class="service-card">
+
+                        <div class="service-icon">
+                            02
+                        </div>
+
+                        <h3>TB Microscopy</h3>
+
+                        <p>
+                            Microscopy services and technical support for
+                            tuberculosis laboratory diagnosis and
+                            quality-assured microscopy practices.
+                        </p>
+
+                    </article>
+
+
+                    <!-- Culture -->
+                    <article class="service-card">
+
+                        <div class="service-icon">
+                            03
+                        </div>
+
+                        <h3>TB Culture</h3>
+
+                        <p>
+                            Laboratory culture services supporting
+                            tuberculosis diagnosis, laboratory
+                            investigations and specialized testing.
+                        </p>
+
+                    </article>
+
+
+                    <!-- Drug Resistance -->
+                    <article class="service-card">
+
+                        <div class="service-icon">
+                            04
+                        </div>
+
+                        <h3>Drug Resistance Testing</h3>
+
+                        <p>
+                            Specialized laboratory support for the
+                            identification and monitoring of tuberculosis
+                            drug resistance.
+                        </p>
+
+                    </article>
+
+
+                    <!-- Quality Assurance -->
+                    <article class="service-card">
+
+                        <div class="service-icon">
+                            05
+                        </div>
+
+                        <h3>Quality Assurance</h3>
+
+                        <p>
+                            Quality assurance activities designed to
+                            strengthen laboratory performance, accuracy
+                            and reliability.
+                        </p>
+
+                    </article>
+
+
+                    <!-- Technical Support -->
+                    <article class="service-card">
+
+                        <div class="service-icon">
+                            06
+                        </div>
+
+                        <h3>Technical Support</h3>
+
+                        <p>
+                            Technical assistance and laboratory support
+                            to strengthen tuberculosis diagnostic
+                            services.
+                        </p>
+
+                    </article>
+
                 </div>
 
-                <div>
-                    <strong>13</strong>
-                    <span>Media Resources</span>
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             LABORATORY IMAGE
+        ========================== -->
+        <section class="facility-section">
+
+            <div class="container">
+
+                <div class="facility-grid">
+
+                    <div class="facility-image">
+
+                        <img
+                            src="Culture image.jpeg"
+                            alt="Tuberculosis laboratory culture activities"
+                            loading="lazy"
+                        >
+
+                    </div>
+
+                    <div class="facility-content">
+
+                        <p class="section-label">
+                            LABORATORY ACTIVITIES
+                        </p>
+
+                        <h2>
+                            Supporting Quality TB Diagnosis
+                        </h2>
+
+                        <p>
+                            Laboratory services play an essential role in
+                            tuberculosis prevention, diagnosis, treatment
+                            monitoring and disease surveillance.
+                        </p>
+
+                        <p>
+                            The NTRL supports laboratory professionals
+                            through technical services, quality systems,
+                            training and continuous improvement.
+                        </p>
+
+                        <a href="#contact" class="btn btn-primary">
+                            Learn More
+                        </a>
+
+                    </div>
+
                 </div>
 
-                <div>
-                    <strong>100%</strong>
-                    <span>Responsive Design</span>
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             QUALITY ASSURANCE
+        ========================== -->
+        <section id="quality" class="section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-label">
+                        QUALITY ASSURANCE
+                    </p>
+
+                    <h2>
+                        Quality and Reliable Laboratory Results
+                    </h2>
+
+                    <p>
+                        Quality assurance is an important component of
+                        tuberculosis laboratory services.
+                    </p>
+
                 </div>
+
+
+                <div class="quality-grid">
+
+                    <div class="quality-card">
+
+                        <h3>Quality Management</h3>
+
+                        <p>
+                            Supporting laboratory quality management
+                            systems and continuous improvement.
+                        </p>
+
+                    </div>
+
+
+                    <div class="quality-card">
+
+                        <h3>Quality Control</h3>
+
+                        <p>
+                            Promoting appropriate quality control
+                            practices across laboratory processes.
+                        </p>
+
+                    </div>
+
+
+                    <div class="quality-card">
+
+                        <h3>External Quality Assessment</h3>
+
+                        <p>
+                            Supporting quality assessment activities to
+                            improve the reliability of laboratory testing.
+                        </p>
+
+                    </div>
+
+
+                    <div class="quality-card">
+
+                        <h3>Technical Supervision</h3>
+
+                        <p>
+                            Providing technical guidance and laboratory
+                            support to strengthen diagnostic services.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             IMAGE GALLERY
+        ========================== -->
+        <section class="section section-light">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-label">
+                        LABORATORY GALLERY
+                    </p>
+
+                    <h2>
+                        TB Laboratory Activities
+                    </h2>
+
+                </div>
+
+
+                <div class="gallery-grid">
+
+                    <figure class="gallery-item">
+
+                        <img
+                            src="Culture image 1.jpeg"
+                            alt="Tuberculosis laboratory activity"
+                            loading="lazy"
+                        >
+
+                        <figcaption>
+                            Laboratory Activity
+                        </figcaption>
+
+                    </figure>
+
+
+                    <figure class="gallery-item">
+
+                        <img
+                            src="Culture image 2.jpeg"
+                            alt="Tuberculosis culture laboratory activity"
+                            loading="lazy"
+                        >
+
+                        <figcaption>
+                            TB Culture
+                        </figcaption>
+
+                    </figure>
+
+
+                    <figure class="gallery-item">
+
+                        <img
+                            src="Culture image 3.jpeg"
+                            alt="Tuberculosis laboratory work"
+                            loading="lazy"
+                        >
+
+                        <figcaption>
+                            Laboratory Work
+                        </figcaption>
+
+                    </figure>
+
+
+                    <figure class="gallery-item">
+
+                        <img
+                            src="Culture Images 2.jpeg"
+                            alt="Tuberculosis laboratory culture activity"
+                            loading="lazy"
+                        >
+
+                        <figcaption>
+                            TB Laboratory Services
+                        </figcaption>
+
+                    </figure>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             TRAINING
+        ========================== -->
+        <section id="training" class="section">
+
+            <div class="container">
+
+                <div class="training-grid">
+
+                    <div>
+
+                        <p class="section-label">
+                            TRAINING & CAPACITY BUILDING
+                        </p>
+
+                        <h2>
+                            Building Stronger Laboratory Capacity
+                        </h2>
+
+                        <p>
+                            Training and capacity building are important
+                            components of strengthening tuberculosis
+                            laboratory services.
+                        </p>
+
+                        <p>
+                            The NTRL supports laboratory personnel through
+                            technical training, mentorship, supervision
+                            and continuous professional development.
+                        </p>
+
+                        <a href="#contact" class="btn btn-primary">
+                            Training Information
+                        </a>
+
+                    </div>
+
+
+                    <div class="training-card">
+
+                        <h3>Capacity Building Areas</h3>
+
+                        <ul>
+
+                            <li>
+                                TB diagnostic techniques
+                            </li>
+
+                            <li>
+                                Molecular testing
+                            </li>
+
+                            <li>
+                                Laboratory quality management
+                            </li>
+
+                            <li>
+                                Biosafety and laboratory practices
+                            </li>
+
+                            <li>
+                                Quality assurance
+                            </li>
+
+                            <li>
+                                Laboratory data and reporting
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CONTACT
+        ========================== -->
+        <section id="contact" class="contact-section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-label">
+                        CONTACT
+                    </p>
+
+                    <h2>
+                        Contact the National Tuberculosis Reference Laboratory
+                    </h2>
+
+                    <p>
+                        For laboratory services, technical information,
+                        training and other enquiries, please contact the
+                        laboratory through the appropriate official
+                        channels.
+                    </p>
+
+                </div>
+
+
+                <div class="contact-grid">
+
+                    <div class="contact-card">
+
+                        <div class="contact-icon">
+                            📍
+                        </div>
+
+                        <h3>Location</h3>
+
+                        <p>
+                            National Tuberculosis Reference Laboratory
+                        </p>
+
+                    </div>
+
+
+                    <div class="contact-card">
+
+                        <div class="contact-icon">
+                            ☎
+                        </div>
+
+                        <h3>Telephone</h3>
+
+                        <p>
+                            Official laboratory contact number
+                        </p>
+
+                    </div>
+
+
+                    <div class="contact-card">
+
+                        <div class="contact-icon">
+                            ✉
+                        </div>
+
+                        <h3>Email</h3>
+
+                        <p>
+                            Official laboratory email address
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+    <footer class="site-footer">
+
+        <div class="container footer-container">
+
+            <div>
+
+                <h3>
+                    National Tuberculosis Reference Laboratory
+                </h3>
+
+                <p>
+                    Strengthening tuberculosis laboratory services
+                    through quality, innovation and technical excellence.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#quality">Quality Assurance</a>
+                <a href="#training">Training</a>
+                <a href="#contact">Contact</a>
 
             </div>
 
         </div>
 
-    </div>
 
-</section>
-```
+        <div class="footer-bottom">
 
+            <div class="container">
+
+                <p>
+                    &copy; <span id="year"></span>
+                    National Tuberculosis Reference Laboratory.
+                    All Rights Reserved.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+    <script>
+
+        function toggleMenu() {
+
+            const navigation =
+                document.getElementById("mainNavigation");
+
+            navigation.classList.toggle("active");
+
+        }
+
+
+        // Automatically display the current year
+        document.getElementById("year").textContent =
+            new Date().getFullYear();
+
+
+        // Close mobile menu after clicking a navigation link
+        document.querySelectorAll("#mainNavigation a").forEach(function(link) {
+
+            link.addEventListener("click", function() {
+
+                document
+                    .getElementById("mainNavigation")
+                    .classList.remove("active");
+
+            });
+
+        });
+
+    </script>
+
+</body>
+</html>
